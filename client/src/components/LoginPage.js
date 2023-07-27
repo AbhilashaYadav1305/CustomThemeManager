@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import useApi from "../hooks/useApi";
-import useCookies from "../hooks/useCookies"; // Import the custom useCookies hook
-import { REACT_APP_API_URL } from "../Utils/constants";
+import useCookies from "../hooks/useCookies";
 
 const LoginPage = (props) => {
   const [email, setEmail] = useState("");
@@ -12,9 +11,8 @@ const LoginPage = (props) => {
   const { handleChange } = props;
 
   const navigate = useNavigate();
-  const { sendRequest } = useApi(); // Initialize the custom hook
-  const { setCookieToken, getCookieValue } = useCookies("token", ""); // Use the useCookies hook to manage the token
-  const apiUrl = REACT_APP_API_URL;
+  const { sendRequest } = useApi();
+  const { setCookieToken, getCookieValue } = useCookies("token", "");
 
   if (getCookieValue()) navigate("/homePage");
 
@@ -26,7 +24,7 @@ const LoginPage = (props) => {
     };
 
     try {
-      const response = await sendRequest(apiUrl + "/login", "POST", user);
+      const response = await sendRequest("/login", "POST", user);
       setCookieToken(response.token, response.expiresIn);
       handleChange({ label: response.theme });
       navigate("/homePage");

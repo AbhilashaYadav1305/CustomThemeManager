@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import themes from "../Utils/theme";
 import useCookies from "../hooks/useCookies";
 import useApi from "../hooks/useApi";
-import { REACT_APP_API_URL } from "../Utils/constants";
 import useProfile from "../hooks/useProfile";
 
 // Higher-Order Component (HOC) for handleChange
@@ -13,14 +12,12 @@ const withHandleChange = (WrappedComponent) => {
     const { getCookieValue } = useCookies("token", "");
     useProfile({ setTheme: setTheme });
 
-    const apiUrl = REACT_APP_API_URL;
-
     const saveThemeInDB = async (selectedTheme) => {
       try {
         const userToken = getCookieValue();
         if (userToken) {
           await sendRequest(
-            apiUrl + "/setTheme",
+            "/setTheme",
             "POST",
             { theme: selectedTheme },
             {
