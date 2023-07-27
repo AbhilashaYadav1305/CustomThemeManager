@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: medium;
+}
+
+.main-section {
+  padding: 10px;
+}
+
+header {
+  padding: 10px 0 20px 0;
+}
+
+input {
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid lightblue;
+}
+
+/* Improved style for .logout-button */
+.logout-button {
+  background-color: #f44336; /* Red color for the background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add some padding around the text */
+  border: none; /* Remove the default border */
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+/* Hover effect for .logout-button */
+.logout-button:hover {
+  background-color: #b96146; /* Darker red color on hover */
+}
+
+/* styles.css */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.form-submit {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: #0056b3;
+}
+
+.signup {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* styles.css */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.theme-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-filter {
+  width: 200px;
+}
+
+.logout-button:hover {
+  background-color: lightgrey;
+}
+
+/* About Page CSS Styling */
+.about-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.about-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-actions a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.about-actions a:hover {
+  background-color: #0056b3;
+}
+
+/* Apply some basic styles to the theme buttons */
+.default {
+  background-color: #606c5d;
+  color: #fff;
+}
+
+.pink {
+  background-color: #ffe7ce;
+}
+
+.green {
+  background-color: #7a9d54;
+  color: #643843;
+}
+
+.blue {
+  background-color: #ccc;
+}
+
+.grey {
+  background-color: #cece5a;
+  color: #606c5d;
+}
+.purple {
+  background-color: #7a9d54;
+  color: #2e2d44;
+}
+
+.yellow {
+  background-color: #c58b6a;
+  color: #080805;
+}
+
+.teal {
+  background-color: #397279;
+  color: #fff;
+}
+
+.orange {
+  background-color: #a5b4d1;
+  color: #0a4e2f;
+}
